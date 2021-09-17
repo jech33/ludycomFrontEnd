@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Tecnica LUDYCOM</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav_bar">
+            <div class = "search_box">
+                <input type="text" id="search_input" class="input" placeholder="Search country or region...">
+                <div class="btn btn_common">
+                    <button id="searchbtn" class="search_button">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="regions">
+        <div class="inner-region">
+            <h2>Africa</h2>
+            <div class = "countries" id = "africa">
+                
+            </div>
+        </div>
+        <div class="inner-region">
+            <h2>America</h2>
+            <div class = "countries" id = "america">
+                
+            </div>
+        </div>
+        <div class="inner-region">
+            <h2>Asia</h2>
+            <div class = "countries" id = "asia">
+                
+            </div>
+        </div>
+        <div class="inner-region">
+            <h2>Europe</h2>
+            <div class = "countries" id = "europa">
+                
+            </div>
+        </div>
+        <div class="inner-region">
+            <h2>Oceania</h2>
+            <div class = "countries" id = "oceania">
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <button data-close-button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="info">
+                <h2 id="selectedCountry">Colombia</h2>
+                <p id="selected-region">Region: Americas</p>
+                <p id="selected-population">Population: loremipsum</p>
+                <p id="selected-capital">Capital: Bogota</p>
+                <p id="selected-currency">Currency: Pesos</p>
+                <p id="selected-language">Language: Español</p>
+                <p id="selected-borderCountries">Border Countries: Ecuador</p>
+            </div>
+            <div id="selected-flag">
+                <img class = "img-flag" src="https://restcountries.eu/data/gha.svg" alt="ghana-flag" width="30" height="18">
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+
+</body>
+</html>
